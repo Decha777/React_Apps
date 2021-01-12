@@ -24,8 +24,8 @@ body,
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.6;
-  background: #222222;
-  color:#d4d3d3;
+  background: #e9e9e9;
+  color:#2c2c2c;
   
 }
 
