@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "main-category":"frontend",
+        "sup-category":"general",
+        "topic":"best framework",
+        "hash-tag":["python","variables","python-variables"],
+        "deficaltiy": "easy",
+        "question": "Which one of the following is best javascript framework?",
+        "options":["jquery","react","vuejs","angular"],
+        "answer":"react",
+        "note":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto odio, aliquam quam numquam placeat doloribus, eaque officia at impedit laudantium veritatis harum vel ullam voluptatibus qui quaerat nam laborum perspiciatis."
+    },
+    {
+        "id": 2,
+        "main-category":"programming",
+        "sup-category":"python",
+        "topic":"variables",
+        "hash-tag":["python","variables","python-variables"],
+        "deficaltiy": "easy",
+        "question": "Which one of the following is not python data type?",
+        "options":["int","list","array","dict"],
+        "answer":"array",
+        "note":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto odio, aliquam quam numquam placeat doloribus, eaque officia at impedit laudantium veritatis harum vel ullam voluptatibus qui quaerat nam laborum perspiciatis."
+    },
+    {
+        "id": 3,
+        "main-category":"programming",
+        "sup-category":"python",
+        "topic":"variables",
+        "hash-tag":["python","variables","python-variables"],
+        "deficaltiy": "easy",
+        "question": "Which one of the following is correct python variable declaration?",
+        "options":["Lorem ipsum dolor, sit amet consectetur adipisicing elit.","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto odio, aliquam quam numquam placeat doloribus, eaque officia at impedit ","variable_name=9","all of above"],
+        "answer":"variable_name=9",
+        "note":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto odio, aliquam quam numquam placeat doloribus, eaque officia at impedit laudantium veritatis harum vel ullam voluptatibus qui quaerat nam laborum perspiciatis."
+    }
+
+
+]
