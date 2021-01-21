@@ -11,8 +11,9 @@ export function HeaderContainer({ children }) {
                 <Header.Group>
                     <Header.TextLink>Home</Header.TextLink>
                     <Header.TextLink>Blog</Header.TextLink>
+
                 </Header.Group>
-                <Header.ButtonLink bgcolor='orangered' to={ROUTES.SIGN_IN}>Sign In</Header.ButtonLink>
+                <Header.ButtonLink bgcolor='orangered' btnWidth='3rem' to={ROUTES.SIGN_IN}>Sign In</Header.ButtonLink>
             </Header.Frame>
             {children}
         </Header>

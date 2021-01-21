@@ -44,7 +44,6 @@ export function CardContainer() {
             setisCorrect(false)
         }
     }
-
     const nexQuestion = () => {
         setindex(index + 1)
         if (isCorrect) {
