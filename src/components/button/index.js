@@ -4,7 +4,7 @@ import styled from 'styled-components/macro';
 const CustomButton = styled.button`
     display: block;
     text-align: center;
-    width: ${props => props.btnWidth};
+    width: ${props => props.btnWidth ? props.btnWidth : 'fit-content'};
     height: fit-content;
     color: white;
     border: 0;
@@ -15,15 +15,15 @@ const CustomButton = styled.button`
     letter-spacing: .1rem;
     cursor: pointer;
     text-decoration: none;
-    background-color: ${props => props.bgcolor};
+    background-color: ${props => props.bgcolor?props.bgcolor:'#0490ec'};
     box-shadow: 0 .2rem .1rem black;
 
     :hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
     box-shadow: 0 .3rem .2rem black;
     }
     :active {
-    transform: translateY(2px);
+    transform: translateY(3px);
     }
 `;
 

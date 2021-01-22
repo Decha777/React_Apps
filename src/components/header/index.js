@@ -28,6 +28,6 @@ Header.TextLink = function HeaderTextLink({ children, ...restProps }) {
 }
 
 Header.ButtonLink = function HeaderButtonLink({ children, ...restProps }) {
-    return <Button {...restProps}>{children}</Button>
+    return <ButtonLink {...restProps}>{children}</ButtonLink>
     
 }

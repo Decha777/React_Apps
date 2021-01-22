@@ -2,20 +2,27 @@ import styled from 'styled-components/macro';
 
 export const Group = styled.form`
 
-    background-color: #e2e2e2;
+    background-color: ${props => props.bgColor};
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     padding: .6rem;
     justify-content:space-between;
     margin: 0 auto;
-    width: ${props=>props.formWidth};
+    width: ${props => props.formWidth};
     
 
     
     :not(:last-child){
         margin-bottom: 2rem;
     }
+
+    
+    
+    @media (max-width: 48em) { // Tablet portrait  => 768px/16px = 48em 
+        width: 100%;
+    }    
+
 `;
 
 
@@ -31,14 +38,15 @@ export const Lable = styled.label`
 
 
 export const Input = styled.input`
+        text-align:center;
         font-size: 1.5rem;
         font-family: inherit;
-        color: #141414;
+        color: #353535;
         padding: 1.5rem;
         border-radius: 2px;
         font-family: inherit;
         border: none;
-        background-color: #fcfcfc;
+        background-color: #ffffff;
        
         border-bottom: 3px solid transparent;
         width: 80%;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Card, Button } from '../components'
 import Data from '../fixtures/questions'
-
+import *  as ROUTES from '../constants/routes'
 
 // const getLocalStorage = () => {
 //     let score = localStorage.getItem('score');
@@ -20,8 +20,8 @@ export function CardContainer() {
     const [isCorrect, setisCorrect] = useState(null)
     const [isEnd, setisEnd] = useState(false)
     const [score, setscore] = useState(0)
-    const AnswerContainer = useRef(null)
-    const ShowAnswer = useRef(() => console.log('hello'));
+    const AnswerContainer = useRef(isCorrect)
+
 
 
     const loadQuiz = () => {
@@ -38,6 +38,8 @@ export function CardContainer() {
         if (answer === correctAnswer) {
             setisCorrect(true)
             // AnsewerContainer.current.style.border = '1px solid green';
+            setscore(score + 1)
+
         }
         else {
             // AnsewerContainer.current.style.border = '1px solid red';
@@ -46,19 +48,13 @@ export function CardContainer() {
     }
     const nexQuestion = () => {
         setindex(index + 1)
-        if (isCorrect) {
-            setscore(score + 1)
-        }
-        else { setscore(score) }
-
-
+       
         if (index >= Data.length - 1) {
             setindex(Data.length - 1)
             setisEnd(true)
         }
 
     }
-
 
     useEffect(() => {
         loadQuiz();
@@ -79,7 +75,7 @@ export function CardContainer() {
                                     <Card.Question>Run Out of Questions</Card.Question>
                                 </Card.Body>
                                 <Card.Footer>
-                                    <Button bgcolor='transparent' btnWidth='20rem' onClick={() => setindex(0)}>Play Again</Button>
+                                    <Button bgcolor='transparent' btnWidth='fit-content' to={ROUTES.HOME}>Play Again</Button>
                                 </Card.Footer>
                             </Card.Content>
                         </Card.Frame>

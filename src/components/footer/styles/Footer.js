@@ -43,6 +43,7 @@ export const Break = styled.div`
   `;
 
 export const Icon= styled.a`
+display:flex;
  margin: 0 1rem;
  font-size: 3rem;
  padding: 1rem;

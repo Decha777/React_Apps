@@ -6,9 +6,9 @@
         "topic":"best framework",
         "hash-tag":["python","variables","python-variables"],
         "deficaltiy": "easy",
-        "question": "Which one of the following is best javascript framework?",
-        "options":["jquery","react","vuejs","angular"],
-        "answer":"react",
+        "question": "Which one of the following is not javascript framework?",
+        "options":["django","react","vuejs","angular"],
+        "answer":"django",
         "note":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto odio, aliquam quam numquam placeat doloribus, eaque officia at impedit laudantium veritatis harum vel ullam voluptatibus qui quaerat nam laborum perspiciatis."
     },
     {

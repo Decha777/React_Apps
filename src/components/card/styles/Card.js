@@ -62,8 +62,7 @@ export const Choice = styled.div`
   color: #c0c0c0;
   height: fit-content;
   padding: .5rem;
-  margin: 1.5rem 0;
-  width: 100%;
+  margin: 1.5rem;
   border: ${props => props.isCorrect}; 
   box-shadow: .2rem .2rem .5rem #1d1d1d;
   cursor: pointer;
@@ -78,9 +77,12 @@ export const Choice = styled.div`
  }
 `;
 export const Question = styled.p`
+background-color:#000000;
 font-size:1.7rem;
-font-weight: 300;
+font-weight: 600;
 color: #fff;
+width: 100%;
+padding: .5rem;
 `;
 export const Score = styled.p`
 font-size: 1.5rem;
@@ -90,7 +92,6 @@ z-index: 1;
 `;
 
 export const Body = styled.div`
- padding: 1rem;
  text-align: center;
  transition: .5s;
  color: #e4e4e4;
